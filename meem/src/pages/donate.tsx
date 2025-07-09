@@ -58,9 +58,9 @@ export default function Donate() {
       <section className="bg-gradient-to-b from-dark-teal to-dark-teal/90 text-white py-20">
         <div className="container-custom text-center">
           <h1 className="text-h1 font-bold mb-4">Make a Donation</h1>
-          <p className="text-xl max-w-3xl mx-auto">
+          <p className="text-xl mx-auto">
             Your generosity enables us to continue our vital work. Every donation, no matter the
-            size, makes a real difference in people's lives.
+            size, makes a real difference in people&apos;s lives.
           </p>
         </div>
       </section>
@@ -167,7 +167,7 @@ export default function Donate() {
                 <div>
                   <h3 className="font-semibold mb-2">Boost your donation with Gift Aid</h3>
                   <p className="text-sm text-gray-700 mb-2">
-                    If you're a UK taxpayer, Gift Aid increases the value of your donation by 25%
+                    If you&apos;re a UK taxpayer, Gift Aid increases the value of your donation by 25%
                     at no extra cost to you.
                   </p>
                   <p className="text-xs text-gray-600">

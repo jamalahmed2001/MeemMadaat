@@ -53,8 +53,8 @@ export default function OurWork() {
       <section className="bg-gradient-to-b from-dark-teal to-dark-teal/90 text-white py-20">
         <div className="container-custom text-center">
           <h1 className="text-h1 font-bold mb-4">Our Work</h1>
-          <p className="text-xl max-w-3xl mx-auto">
-            Through our dedicated programs, we're making a tangible difference in the lives of
+          <p className="text-xl mx-auto">
+            Through our dedicated programs, we&apos;re making a tangible difference in the lives of
             thousands across the UK and Pakistan.
           </p>
         </div>
@@ -65,7 +65,7 @@ export default function OurWork() {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-h2 font-semibold mb-4">Our Programs</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 mx-auto">
               Each of our programs is designed to address specific needs in the communities we serve,
               with a focus on sustainable, long-term impact.
             </p>
@@ -139,7 +139,7 @@ export default function OurWork() {
       <section className="py-16 bg-gofundme-green text-white">
         <div className="container-custom text-center">
           <h2 className="text-h2 font-semibold mb-4">Support Our Work</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-xl mb-8 mx-auto">
             Your donation helps us expand our programs and reach more people in need.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -151,7 +151,7 @@ export default function OurWork() {
             </Link>
             <Link
               href="/volunteer"
-              className="btn-secondary border-white text-white hover:bg-white hover:text-gofundme-green"
+              className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-gofundme-green transition-colors"
             >
               Volunteer With Us
             </Link>

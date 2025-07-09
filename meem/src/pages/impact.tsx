@@ -93,7 +93,7 @@ export default function Impact() {
       <section className="bg-gradient-to-b from-dark-teal to-dark-teal/90 text-white py-20">
         <div className="container-custom text-center">
           <h1 className="text-h1 font-bold mb-4">Impact & Reports</h1>
-          <p className="text-xl max-w-3xl mx-auto">
+          <p className="text-xl mx-auto">
             Transparency is at the heart of our work. Explore our impact through data, stories,
             and comprehensive reports.
           </p>
@@ -270,7 +270,7 @@ export default function Impact() {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <h2 className="text-h2 font-semibold text-center mb-4">Stories of Change</h2>
-          <p className="text-lg text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-center mb-12 mx-auto">
             Behind every number is a human story. These are just a few of the lives transformed
             through your support.
           </p>
@@ -303,15 +303,23 @@ export default function Impact() {
       <section className="py-16 bg-gofundme-green text-white">
         <div className="container-custom text-center">
           <h2 className="text-h2 font-semibold mb-4">Be Part of Our Impact</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-xl mb-8 mx-auto">
             Every donation, no matter the size, contributes to these life-changing results.
           </p>
-          <Link
-            href="/donate"
-            className="btn-primary bg-white text-gofundme-green hover:bg-gray-100"
-          >
-            Make Your Impact Today
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/donate"
+              className="btn-primary bg-white text-gofundme-green hover:bg-gray-100"
+            >
+              Make Your Impact Today
+            </Link>
+            <Link
+              href="/volunteer"
+              className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-gofundme-green transition-colors"
+            >
+              Become a Volunteer
+            </Link>
+          </div>
         </div>
       </section>
     </Layout>

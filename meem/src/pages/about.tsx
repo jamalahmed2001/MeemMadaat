@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../components/Layout";
 
 // Mock data for demonstration
@@ -77,7 +78,7 @@ export default function AboutUs() {
       <section className="bg-gradient-to-b from-dark-teal to-dark-teal/90 text-white py-20">
         <div className="container-custom text-center">
           <h1 className="text-h1 font-bold mb-4">About Meem Madaat</h1>
-          <p className="text-xl max-w-3xl mx-auto">
+          <p className="text-xl mx-auto">
             Founded on the principles of compassion and service, we work to create positive change
             in communities across the UK and Pakistan.
           </p>
@@ -177,7 +178,7 @@ export default function AboutUs() {
       <section className="py-16 bg-light-gray">
         <div className="container-custom">
           <h2 className="text-h2 font-semibold text-center mb-4">Our Team</h2>
-          <p className="text-lg text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-center mb-12 mx-auto">
             Led by a dedicated board of trustees who bring diverse expertise and a shared commitment
             to our mission.
           </p>
@@ -199,16 +200,19 @@ export default function AboutUs() {
       <section className="py-16 bg-gofundme-green text-white">
         <div className="container-custom text-center">
           <h2 className="text-h2 font-semibold mb-4">Join Us in Making a Difference</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-xl mb-8 mx-auto">
             Your support helps us continue our vital work in communities that need it most.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/donate" className="btn-primary bg-white text-gofundme-green hover:bg-gray-100">
+            <Link href="/donate" className="btn-primary bg-white text-gofundme-green hover:bg-gray-100">
               Donate Now
-            </a>
-            <a href="/volunteer" className="btn-secondary border-white text-white hover:bg-white hover:text-gofundme-green">
+            </Link>
+            <Link
+              href="/volunteer"
+              className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-gofundme-green transition-colors"
+            >
               Become a Volunteer
-            </a>
+            </Link>
           </div>
         </div>
       </section>

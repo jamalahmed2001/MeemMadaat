@@ -92,7 +92,7 @@ export default function News() {
       <section className="bg-gradient-to-b from-dark-teal to-dark-teal/90 text-white py-20">
         <div className="container-custom text-center">
           <h1 className="text-h1 font-bold mb-4">News & Updates</h1>
-          <p className="text-xl max-w-3xl mx-auto">
+          <p className="text-xl mx-auto">
             Stay informed about our latest initiatives, success stories, and the impact of your support
           </p>
         </div>

@@ -107,7 +107,7 @@ export default function Governance() {
       <section className="bg-gradient-to-b from-dark-teal to-dark-teal/90 text-white py-20">
         <div className="container-custom text-center">
           <h1 className="text-h1 font-bold mb-4">Governance</h1>
-          <p className="text-xl max-w-3xl mx-auto">
+          <p className="text-xl mx-auto">
             We are committed to the highest standards of governance, transparency, and accountability
             in all aspects of our work.
           </p>

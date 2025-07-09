@@ -39,9 +39,9 @@ export default function Contact() {
       <section className="bg-gradient-to-b from-dark-teal to-dark-teal/90 text-white py-20">
         <div className="container-custom text-center">
           <h1 className="text-h1 font-bold mb-4">Contact Us</h1>
-          <p className="text-xl max-w-3xl mx-auto">
-            We'd love to hear from you. Whether you have questions about our work, want to get
-            involved, or need assistance, we're here to help.
+          <p className="text-xl mx-auto">
+            We&apos;d love to hear from you. Whether you have questions about our work, want to get
+            involved, or need assistance, we&apos;re here to help.
           </p>
         </div>
       </section>

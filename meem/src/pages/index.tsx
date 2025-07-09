@@ -55,7 +55,7 @@ export default function Home() {
         <div className="container-custom relative z-10 text-center text-white">
           <h1 className="text-h1 font-bold mb-4">Help Us Make a Difference</h1>
           <p className="text-xl mb-2">UK-registered charity (Charity No. XXXXX)</p>
-          <p className="text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-lg mb-8 mx-auto">
             Dedicated to relieving poverty, advancing healthcare, and promoting social cohesion
             in the UK and Pakistan
           </p>
@@ -63,8 +63,8 @@ export default function Home() {
             <Link href="/donate" className="btn-primary text-lg px-8 py-4">
               Donate Now
             </Link>
-            <Link href="/our-work" className="btn-secondary text-lg px-8 py-4">
-              Learn More
+            <Link href="/volunteer" className="btn-secondary text-lg px-8 py-4">
+              Become a Volunteer
             </Link>
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <h2 className="text-h2 font-semibold text-center mb-4">Our Charitable Objects</h2>
-          <p className="text-lg text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-center mb-12 mx-auto">
             We work tirelessly to create positive change in communities across the UK and Pakistan
             through our three core areas of focus.
           </p>
@@ -164,7 +164,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-6"></div>
             <blockquote className="text-xl italic mb-6">
-              "{testimonial.quote}"
+              &quot;{testimonial.quote}&quot;
             </blockquote>
             <p className="font-semibold">{testimonial.name}</p>
             <p className="text-gray-600">{testimonial.role}</p>

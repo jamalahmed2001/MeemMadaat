@@ -31,22 +31,22 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-dark-teal text-white sticky top-0 z-50 shadow-lg">
+      <header className="bg-dark-teal text-white">
         <nav className="container-custom">
-          <div className="flex items-center justify-between py-4 lg:py-5">
+          <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link href="/" className="text-2xl font-bold hover:text-gofundme-green transition-colors">
+            <Link href="/" className="text-xl font-bold">
               Meem Madaat
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            <div className="hidden lg:flex items-center space-x-8">
               {navigation.map((item) => (
                 <div key={item.name} className="relative">
                   {item.children ? (
                     <>
                       <button
-                        className="hover:text-gofundme-green transition-colors duration-200 py-2 font-medium"
+                        className="hover:text-gofundme-green transition-colors duration-200 py-2"
                         onClick={() => setDropdownOpen(!dropdownOpen)}
                       >
                         {item.name}
@@ -57,8 +57,7 @@ export default function Layout({ children }: LayoutProps) {
                             <Link
                               key={child.name}
                               href={child.href}
-                              className="block px-4 py-3 text-charcoal hover:bg-light-gray transition-colors duration-200"
-                              onClick={() => setDropdownOpen(false)}
+                              className="block px-4 py-2 text-charcoal hover:bg-light-gray transition-colors duration-200"
                             >
                               {child.name}
                             </Link>
@@ -69,23 +68,22 @@ export default function Layout({ children }: LayoutProps) {
                   ) : (
                     <Link
                       href={item.href}
-                      className="hover:text-gofundme-green transition-colors duration-200 font-medium"
+                      className="hover:text-gofundme-green transition-colors duration-200"
                     >
                       {item.name}
                     </Link>
                   )}
                 </div>
               ))}
-              <Link href="/donate" className="btn-primary ml-4">
+              <Link href="/donate" className="btn-primary">
                 Donate Now
               </Link>
             </div>
 
             {/* Mobile menu button */}
             <button
-              className="lg:hidden p-2"
+              className="lg:hidden"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle mobile menu"
             >
               <svg
                 className="h-6 w-6"
@@ -119,19 +117,17 @@ export default function Layout({ children }: LayoutProps) {
                 <div key={item.name}>
                   <Link
                     href={item.href}
-                    className="block py-3 hover:text-gofundme-green transition-colors duration-200 font-medium"
-                    onClick={() => setMobileMenuOpen(false)}
+                    className="block py-2 hover:text-gofundme-green transition-colors duration-200"
                   >
                     {item.name}
                   </Link>
                   {item.children && (
-                    <div className="pl-6">
+                    <div className="pl-4">
                       {item.children.map((child) => (
                         <Link
                           key={child.name}
                           href={child.href}
                           className="block py-2 text-sm hover:text-gofundme-green transition-colors duration-200"
-                          onClick={() => setMobileMenuOpen(false)}
                         >
                           {child.name}
                         </Link>
@@ -140,11 +136,7 @@ export default function Layout({ children }: LayoutProps) {
                   )}
                 </div>
               ))}
-              <Link 
-                href="/donate" 
-                className="btn-primary mt-6 inline-block"
-                onClick={() => setMobileMenuOpen(false)}
-              >
+              <Link href="/donate" className="btn-primary mt-4 inline-block">
                 Donate Now
               </Link>
             </div>
@@ -156,13 +148,13 @@ export default function Layout({ children }: LayoutProps) {
       <main className="flex-grow">{children}</main>
 
       {/* Footer */}
-      <footer className="bg-dark-teal text-white">
-        <div className="container-custom py-16 lg:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+      <footer className="bg-dark-teal text-white mt-16">
+        <div className="container-custom py-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* About Section */}
-            <div className="lg:col-span-1">
-              <h3 className="text-xl font-semibold mb-4">About Meem Madaat</h3>
-              <p className="text-sm text-white/80 leading-relaxed">
+            <div>
+              <h3 className="text-lg font-semibold mb-4">About Meem Madaat</h3>
+              <p className="text-sm text-white/80">
                 UK-registered charity (Charity No. XXXXX) dedicated to relieving poverty,
                 advancing healthcare, and promoting social cohesion in the UK and Pakistan.
               </p>
@@ -170,25 +162,25 @@ export default function Layout({ children }: LayoutProps) {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-3 text-sm">
+              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/about" className="hover:text-gofundme-green transition-colors inline-block">
+                  <Link href="/about" className="hover:text-gofundme-green transition-colors">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/governance" className="hover:text-gofundme-green transition-colors inline-block">
+                  <Link href="/governance" className="hover:text-gofundme-green transition-colors">
                     Governance
                   </Link>
                 </li>
                 <li>
-                  <Link href="/impact" className="hover:text-gofundme-green transition-colors inline-block">
+                  <Link href="/impact" className="hover:text-gofundme-green transition-colors">
                     Impact & Reports
                   </Link>
                 </li>
                 <li>
-                  <Link href="/policies" className="hover:text-gofundme-green transition-colors inline-block">
+                  <Link href="/policies" className="hover:text-gofundme-green transition-colors">
                     Policies & Compliance
                   </Link>
                 </li>
@@ -197,20 +189,20 @@ export default function Layout({ children }: LayoutProps) {
 
             {/* Get Involved */}
             <div>
-              <h3 className="text-xl font-semibold mb-4">Get Involved</h3>
-              <ul className="space-y-3 text-sm">
+              <h3 className="text-lg font-semibold mb-4">Get Involved</h3>
+              <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/donate" className="hover:text-gofundme-green transition-colors inline-block">
+                  <Link href="/donate" className="hover:text-gofundme-green transition-colors">
                     Donate
                   </Link>
                 </li>
                 <li>
-                  <Link href="/volunteer" className="hover:text-gofundme-green transition-colors inline-block">
+                  <Link href="/volunteer" className="hover:text-gofundme-green transition-colors">
                     Volunteer
                   </Link>
                 </li>
                 <li>
-                  <Link href="/fundraise" className="hover:text-gofundme-green transition-colors inline-block">
+                  <Link href="/fundraise" className="hover:text-gofundme-green transition-colors">
                     Fundraise for Us
                   </Link>
                 </li>
@@ -219,27 +211,18 @@ export default function Layout({ children }: LayoutProps) {
 
             {/* Contact */}
             <div>
-              <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-              <div className="text-sm text-white/80 space-y-2">
-                <p>
-                  Email: <a href="mailto:info@meemmadaat.org" className="hover:text-gofundme-green transition-colors">info@meemmadaat.org</a>
-                </p>
-                <p>
-                  Phone: <a href="tel:+441234567890" className="hover:text-gofundme-green transition-colors">+44 (0) 123 456 7890</a>
-                </p>
-                <p className="pt-2">
-                  <Link href="/contact" className="hover:text-gofundme-green transition-colors inline-flex items-center">
-                    Contact Form 
-                    <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </p>
-              </div>
+              <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+              <p className="text-sm text-white/80">
+                Email: info@meemmadaat.org<br />
+                Phone: +44 (0) 123 456 7890<br />
+                <Link href="/contact" className="hover:text-gofundme-green transition-colors">
+                  Contact Form →
+                </Link>
+              </p>
             </div>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-white/20 text-center text-sm text-white/60">
+          <div className="mt-8 pt-8 border-t border-white/20 text-center text-sm text-white/60">
             <p>&copy; 2024 Meem Madaat. All rights reserved. Registered Charity No. XXXXX</p>
           </div>
         </div>

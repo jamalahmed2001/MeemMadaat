@@ -82,7 +82,7 @@ export default function GetInvolved() {
       <section className="bg-gradient-to-b from-dark-teal to-dark-teal/90 text-white py-20">
         <div className="container-custom text-center">
           <h1 className="text-h1 font-bold mb-4">Get Involved</h1>
-          <p className="text-xl max-w-3xl mx-auto">
+          <p className="text-xl mx-auto">
             There are many ways to support our mission. Whether through donations, volunteering,
             or spreading awareness, every contribution makes a difference.
           </p>
@@ -166,7 +166,7 @@ export default function GetInvolved() {
               </div>
               <div>
                 <p className="text-4xl font-bold text-gofundme-green mb-2">£100</p>
-                <p className="text-gray-700">Sponsors a child's education for 3 months</p>
+                <p className="text-gray-700">Sponsors a child&apos;s education for 3 months</p>
               </div>
             </div>
             <p className="text-lg text-gray-700">
@@ -187,8 +187,8 @@ export default function GetInvolved() {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="card">
               <blockquote className="text-gray-700 mb-4">
-                "Volunteering with Meem Madaat has been life-changing. Seeing the direct impact
-                of our work on families in need is incredibly rewarding."
+                &quot;Volunteering with Meem Madaat has been life-changing. Seeing the direct impact
+                of our work on families in need is incredibly rewarding.&quot;
               </blockquote>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
@@ -201,8 +201,8 @@ export default function GetInvolved() {
 
             <div className="card">
               <blockquote className="text-gray-700 mb-4">
-                "I organized a charity run for Meem Madaat and raised £5,000. The support from
-                their team made it easy and enjoyable."
+                &quot;I organized a charity run for Meem Madaat and raised £5,000. The support from
+                their team made it easy and enjoyable.&quot;
               </blockquote>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
@@ -220,8 +220,8 @@ export default function GetInvolved() {
       <section className="py-16 bg-gofundme-green text-white">
         <div className="container-custom text-center">
           <h2 className="text-h2 font-semibold mb-4">Ready to Make a Difference?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Choose how you'd like to support our mission and join thousands of others
+          <p className="text-xl mb-8 mx-auto">
+            Choose how you&apos;d like to support our mission and join thousands of others
             creating positive change.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -232,10 +232,10 @@ export default function GetInvolved() {
               Donate Now
             </Link>
             <Link
-              href="/contact"
-              className="btn-secondary border-white text-white hover:bg-white hover:text-gofundme-green"
+              href="/volunteer"
+              className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-gofundme-green transition-colors"
             >
-              Contact Us
+              Become a Volunteer
             </Link>
           </div>
         </div>

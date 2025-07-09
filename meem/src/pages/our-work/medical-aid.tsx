@@ -34,7 +34,7 @@ export default function MedicalAid() {
       <section className="bg-gradient-to-b from-dark-teal to-dark-teal/90 text-white py-20">
         <div className="container-custom text-center">
           <h1 className="text-h1 font-bold mb-4">Medical Aid Program</h1>
-          <p className="text-xl max-w-3xl mx-auto">
+          <p className="text-xl mx-auto">
             Bringing free, quality healthcare to underserved communities across Pakistan
           </p>
         </div>
@@ -147,9 +147,9 @@ export default function MedicalAid() {
                 </div>
                 <div className="md:w-2/3">
                   <blockquote className="text-lg italic mb-4">
-                    "When my daughter fell ill, we had no money for treatment. The Meem Madaat clinic
+                    &quot;When my daughter fell ill, we had no money for treatment. The Meem Madaat clinic
                     not only provided free medicine but also arranged follow-up care. They saved her
-                    life. I am forever grateful."
+                    life. I am forever grateful.&quot;
                   </blockquote>
                   <p className="font-semibold">Amina Bibi</p>
                   <p className="text-gray-600">Mother of three, Karachi</p>
@@ -159,7 +159,7 @@ export default function MedicalAid() {
 
             <div className="mt-8 text-center">
               <p className="text-lg text-gray-700 mb-6">
-                Stories like Amina's remind us why accessible healthcare is so crucial. Every
+                Stories like Amina&apos;s remind us why accessible healthcare is so crucial. Every
                 donation helps us reach more families in need.
               </p>
             </div>
@@ -171,7 +171,7 @@ export default function MedicalAid() {
       <section className="py-16 bg-gofundme-green text-white">
         <div className="container-custom text-center">
           <h2 className="text-h2 font-semibold mb-4">Help Us Expand Our Reach</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-xl mb-8 mx-auto">
             With your support, we can open more clinics and provide healthcare to thousands more
             people who desperately need it.
           </p>
@@ -184,7 +184,7 @@ export default function MedicalAid() {
             </Link>
             <Link
               href="/volunteer"
-              className="btn-secondary border-white text-white hover:bg-white hover:text-gofundme-green"
+              className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-gofundme-green transition-colors"
             >
               Volunteer as a Healthcare Professional
             </Link>
