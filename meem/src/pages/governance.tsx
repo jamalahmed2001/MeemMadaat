@@ -1,38 +1,143 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
+import Link from "next/link";
 
 // Mock data for demonstration
 const trustees = [
   {
-    name: "Dr. Ahmed Khan",
-    role: "Chair of Trustees",
-    appointmentDate: "January 2018",
-    background: "Medical doctor with expertise in public health and international development",
+    name: "Haji Nasar Hussain",
+    role: "Chair of Board",
+    contact: "07809 770311",
+    location: "Preston"
   },
   {
-    name: "Sarah Thompson",
-    role: "Treasurer",
-    appointmentDate: "March 2018",
-    background: "Chartered accountant specializing in charity finance and governance",
-  },
-  {
-    name: "Imam Muhammad Ali",
+    name: "Haji Zahid Zafar",
     role: "Trustee",
-    appointmentDate: "January 2018",
-    background: "Community leader and educator with focus on interfaith dialogue",
+    contact: "07768 881333",
+    location: "Preston"
   },
   {
-    name: "Fatima Patel",
-    role: "Secretary",
-    appointmentDate: "June 2019",
-    background: "Social worker with experience in community development programs",
-  },
-  {
-    name: "James Wilson",
+    name: "Haji Nazir Hussain",
     role: "Trustee",
-    appointmentDate: "September 2020",
-    background: "Former civil servant with expertise in UK charity regulations",
+    contact: "07748 554341",
+    location: "Manchester"
   },
+  {
+    name: "Haji Wahid Zafar",
+    role: "Trustee",
+    contact: "07424 749271",
+    location: "Preston"
+  },
+  {
+    name: "Kamran Ahmed",
+    role: "Trustee",
+    contact: "07855 828060",
+    location: "Preston"
+  },
+  {
+    name: "Haji Rizwan Ahmed",
+    role: "Trustee",
+    contact: "07786 650546",
+    location: "Preston"
+  },
+  {
+    name: "Ch. Imran Ahmed",
+    role: "Trustee",
+    contact: "07400 400439",
+    location: "Preston"
+  },
+  {
+    name: "Haji Asim Raza",
+    role: "Trustee",
+    contact: "07763 843697",
+    location: "Preston"
+  },
+  {
+    name: "Ch. Naeem Akram",
+    role: "Trustee",
+    contact: "07547 933453",
+    location: "Birmingham"
+  },
+  {
+    name: "Ch. Faisal Akhbar",
+    role: "Trustee",
+    contact: "07976 352883",
+    location: "Blackburn"
+  },
+  {
+    name: "Shoaib Karim Attari",
+    role: "Trustee",
+    contact: "07759 469284",
+    location: "Preston"
+  }
+];
+
+const clinicProjectHeads = [
+  {
+    name: "Ch. Zameer Hussain",
+    role: "Head, Gharmallah Project Management Team",
+    contact: "+92 305 5761335"
+  },
+  {
+    name: "Haji Manzoor Raza",
+    role: "Project Management Team Member",
+    contact: null
+  },
+  {
+    name: "Haji Sabir Hussain",
+    role: "Project Management Team Member",
+    contact: null
+  },
+  {
+    name: "Haji Riaz Ahmed",
+    role: "Head, Shakreela Shareef Project (UK/Pakistan)",
+    contact: "+44 7767 902850 / +92 336 208578"
+  },
+  {
+    name: "Haji Shiraz Rafiq Saab",
+    role: "Account Signatory",
+    contact: "+92 345 5697785"
+  },
+  {
+    name: "Ch. Fiaz Ahmed",
+    role: "Account Signatory",
+    contact: null
+  },
+  {
+    name: "Ch. Zain Ahmed",
+    role: "Project Management Team Member",
+    contact: "+92 341 5056013"
+  },
+  {
+    name: "Raja Mehzood Khan Saab",
+    role: "Retired Navy – Account Signatory",
+    contact: null
+  },
+  {
+    name: "Miayan Ghulam Mustapha Saab",
+    role: "Clinic Supervisor",
+    contact: null
+  },
+  {
+    name: "Bashir Ahmed Saab",
+    role: "Retired Navy Chief",
+    contact: null
+  },
+  {
+    name: "Abdul Satar (Papu Bahi)",
+    role: "Project Team Member",
+    contact: null
+  },
+  {
+    name: "Ch. Haroon Rashid",
+    role: "Project Team Member",
+    contact: null
+  },
+  {
+    name: "Ch. Yasar Arfat",
+    role: "Project Team Member",
+    contact: null
+  }
 ];
 
 const policies = [
@@ -40,31 +145,37 @@ const policies = [
     title: "Safeguarding Policy",
     description: "Our commitment to protecting vulnerable adults and children in all our programs",
     lastUpdated: "January 2024",
-    downloadUrl: "/documents/safeguarding-policy.pdf",
+    url: "/governance/safeguarding-policy",
   },
   {
     title: "Conflicts of Interest Policy",
     description: "Guidelines for managing and declaring conflicts of interest among trustees and staff",
     lastUpdated: "December 2023",
-    downloadUrl: "/documents/conflicts-of-interest.pdf",
+    url: "/governance/conflicts-of-interest",
   },
   {
     title: "Financial Controls Policy",
     description: "Procedures for financial management, authorization, and accountability",
     lastUpdated: "November 2023",
-    downloadUrl: "/documents/financial-controls.pdf",
+    url: "/governance/financial-controls",
+  },
+  {
+    title: "Constitution",
+    description: "Our governing document that sets out our charitable objects, powers, and governance structure",
+    lastUpdated: "March 2023",
+    url: "/governance/constitution",
   },
   {
     title: "Privacy Policy",
     description: "How we collect, use, and protect personal data in compliance with GDPR",
     lastUpdated: "October 2023",
-    downloadUrl: "/documents/privacy-policy.pdf",
+    url: "/governance/privacy-policy",
   },
   {
     title: "Complaints Procedure",
     description: "How to raise concerns and our process for handling complaints",
     lastUpdated: "September 2023",
-    downloadUrl: "/documents/complaints-procedure.pdf",
+    url: "/governance/complaints-procedure",
   },
 ];
 
@@ -74,21 +185,21 @@ const annualReports = [
     income: "£850,000",
     expenditure: "£780,000",
     beneficiaries: "15,000",
-    downloadUrl: "/documents/annual-report-2023.pdf",
+    pageUrl: "/governance/annual-report-2023",
   },
   {
     year: "2022",
     income: "£650,000",
     expenditure: "£590,000",
     beneficiaries: "12,000",
-    downloadUrl: "/documents/annual-report-2022.pdf",
+    pageUrl: "/governance/annual-report-2022",
   },
   {
     year: "2021",
     income: "£450,000",
     expenditure: "£410,000",
     beneficiaries: "8,500",
-    downloadUrl: "/documents/annual-report-2021.pdf",
+    pageUrl: "/governance/annual-report-2021",
   },
 ];
 
@@ -140,12 +251,12 @@ export default function Governance() {
                 </div>
                 
                 <div className="pt-4">
-                  <a href="/documents/constitution.pdf" className="btn-primary inline-flex items-center">
+                  <Link href="/governance/constitution" className="btn-primary inline-flex items-center">
                     <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
-                    Download Constitution (PDF)
-                  </a>
+                    View Constitution
+                  </Link>
                 </div>
               </div>
             </div>
@@ -164,8 +275,8 @@ export default function Governance() {
                 <tr>
                   <th className="px-6 py-4 text-left">Name</th>
                   <th className="px-6 py-4 text-left">Role</th>
-                  <th className="px-6 py-4 text-left">Appointed</th>
-                  <th className="px-6 py-4 text-left">Background</th>
+                  <th className="px-6 py-4 text-left">Location</th>
+                  <th className="px-6 py-4 text-left">Contact</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
@@ -173,18 +284,40 @@ export default function Governance() {
                   <tr key={index} className="hover:bg-gray-50">
                     <td className="px-6 py-4 font-medium">{trustee.name}</td>
                     <td className="px-6 py-4">{trustee.role}</td>
-                    <td className="px-6 py-4">{trustee.appointmentDate}</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">{trustee.background}</td>
+                    <td className="px-6 py-4">{trustee.location}</td>
+                    <td className="px-6 py-4">{trustee.contact}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
+        </div>
+      </section>
+
+      {/* Clinic Project Heads Section */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <h2 className="text-h2 font-semibold text-center mb-12">Clinic Project Heads (Pakistan)</h2>
           
-          <div className="mt-8 text-center">
-            <p className="text-gray-600">
-              Trustees serve a term of 4 years and may be re-elected for up to 2 consecutive terms.
-            </p>
+          <div className="overflow-x-auto">
+            <table className="w-full bg-white rounded-lg overflow-hidden shadow-sm">
+              <thead className="bg-dark-teal text-white">
+                <tr>
+                  <th className="px-6 py-4 text-left">Name</th>
+                  <th className="px-6 py-4 text-left">Role</th>
+                  <th className="px-6 py-4 text-left">Contact</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                {clinicProjectHeads.map((head, index) => (
+                  <tr key={index} className="hover:bg-gray-50">
+                    <td className="px-6 py-4 font-medium">{head.name}</td>
+                    <td className="px-6 py-4">{head.role}</td>
+                    <td className="px-6 py-4">{head.contact ?? "(no contact provided)"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
@@ -202,12 +335,12 @@ export default function Governance() {
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-gray-500">Updated: {policy.lastUpdated}</span>
                   <a 
-                    href={policy.downloadUrl}
+                    href={policy.url}
                     className="text-gofundme-green font-semibold hover:underline inline-flex items-center"
                   >
-                    Download
+                    View Policy
                     <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </a>
                 </div>
@@ -227,6 +360,15 @@ export default function Governance() {
               We publish detailed annual reports and accounts, independently examined in accordance
               with charity regulations.
             </p>
+            
+            <div className="text-center mb-8">
+              <Link href="/governance/annual-reports" className="btn-primary inline-flex items-center">
+                <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                View All Annual Reports
+              </Link>
+            </div>
             
             <div className="space-y-4">
               {annualReports.map((report, index) => (
@@ -250,13 +392,14 @@ export default function Governance() {
                       </div>
                     </div>
                     <a 
-                      href={report.downloadUrl}
+                      href={report.pageUrl}
                       className="btn-primary inline-flex items-center"
                     >
                       <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                       </svg>
-                      Download Report
+                      View Report
                     </a>
                   </div>
                 </div>

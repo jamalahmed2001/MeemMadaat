@@ -166,13 +166,13 @@ export default function News() {
       {/* Newsletter Signup */}
       <section className="py-16 bg-light-gray">
         <div className="container-custom">
-          <div className="max-w-2xl mx-auto text-center">
+          <div className=" mx-auto text-center">
             <h2 className="text-h2 font-semibold mb-4">Stay Connected</h2>
             <p className="text-lg text-gray-700 mb-8">
               Subscribe to our newsletter for monthly updates on our work and impact
             </p>
             
-            <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <form className="flex flex-col sm:flex-row gap-4 mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email"

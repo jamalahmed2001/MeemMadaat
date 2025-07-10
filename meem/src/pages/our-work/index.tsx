@@ -15,26 +15,59 @@ const programs = [
     link: "/our-work/medical-aid",
   },
   {
-    title: "Homeless Support (UK)",
-    description: "Supporting homeless individuals in the UK with meals, shelter, and pathways to stable housing.",
-    image: "/images/homeless-support.jpg",
+    title: "Family Support",
+    description: "Comprehensive support for vulnerable families, widows, and orphans through financial aid and empowerment programs.",
+    image: "/images/family-support.jpg",
     stats: {
-      meals: "50,000+",
-      nights: "5,000+",
-      volunteers: "200+",
+      families: "7,000+",
+      individuals: "15,000+",
+      programs: "5",
     },
-    link: "/our-work/homeless-support",
+    link: "/our-work/family-support",
   },
   {
-    title: "Education & Community Development",
-    description: "Empowering communities in Pakistan through education, literacy programs, and skills training.",
+    title: "Education Programs",
+    description: "Empowering communities through quality education, adult literacy, and vocational training programs.",
     image: "/images/education.jpg",
     stats: {
-      students: "1,000+",
-      schools: "15",
-      teachers: "75+",
+      students: "8,670+",
+      centers: "28",
+      teachers: "450+",
     },
     link: "/our-work/education",
+  },
+  {
+    title: "Emergency Relief",
+    description: "Rapid response to natural disasters and emergencies, providing immediate aid and long-term recovery support.",
+    image: "/images/emergency-relief.jpg",
+    stats: {
+      responses: "45",
+      people: "55,500+",
+      time: "72hrs",
+    },
+    link: "/our-work/emergency-relief",
+  },
+  {
+    title: "Community Development",
+    description: "Building sustainable infrastructure and empowering communities through water, sanitation, and development projects.",
+    image: "/images/community-development.jpg",
+    stats: {
+      projects: "162",
+      communities: "85",
+      people: "53,500+",
+    },
+    link: "/our-work/community-development",
+  },
+  {
+    title: "Food Security",
+    description: "Fighting hunger and malnutrition through emergency food distribution and sustainable agriculture programs.",
+    image: "/images/food-security.jpg",
+    stats: {
+      meals: "488,500+",
+      people: "104,200+",
+      communities: "150",
+    },
+    link: "/our-work/food-security",
   },
 ];
 
@@ -116,15 +149,15 @@ export default function OurWork() {
 
           <div className="grid md:grid-cols-4 gap-8 text-center max-w-4xl mx-auto">
             <div>
-              <p className="text-4xl font-bold text-gofundme-green mb-2">50,000+</p>
+              <p className="text-4xl font-bold text-gofundme-green mb-2">350,000+</p>
               <p className="text-lg font-semibold">People Helped</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-gofundme-green mb-2">25</p>
-              <p className="text-lg font-semibold">Active Locations</p>
+              <p className="text-4xl font-bold text-gofundme-green mb-2">468</p>
+              <p className="text-lg font-semibold">Active Programs</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-gofundme-green mb-2">325+</p>
+              <p className="text-4xl font-bold text-gofundme-green mb-2">750+</p>
               <p className="text-lg font-semibold">Volunteers</p>
             </div>
             <div>

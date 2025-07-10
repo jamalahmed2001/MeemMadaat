@@ -4,13 +4,12 @@ import Layout from "../components/Layout";
 
 // Mock data for demonstration
 const timeline = [
-  { year: "2018", event: "Meem Madaat founded by a group of passionate volunteers" },
-  { year: "2019", event: "First medical clinic opened in rural Pakistan" },
-  { year: "2020", event: "Launched UK homeless support program in response to COVID-19" },
-  { year: "2021", event: "Education program reaches 500 children in Pakistan" },
-  { year: "2022", event: "Opened 5th medical clinic and expanded UK operations" },
-  { year: "2023", event: "Achieved £1 million in total donations" },
-  { year: "2024", event: "Celebrating 6 years of service with 50,000+ people helped" },
+  { year: "2018", event: "Meem Madaat founded as a UK-registered charity" },
+  { year: "2019", event: "First medical clinic opened in Gharmallah, Pakistan" },
+  { year: "2020", event: "Expanded medical aid program with additional clinics" },
+  { year: "2021", event: "Launched Shakreela Shareef Project" },
+  { year: "2022", event: "Reached milestone of serving over 15,000 patients" },
+  { year: "2023", event: "Expanded to 10 medical clinics across Pakistan" },
 ];
 
 const values = [
@@ -38,28 +37,28 @@ const values = [
 
 const trustees = [
   {
-    name: "Dr. Ahmed Khan",
-    role: "Chair of Trustees",
-    bio: "Medical doctor with 20 years of experience in public health. Founded several healthcare initiatives in Pakistan.",
-    image: "/images/trustee-1.jpg",
+    name: "Haji Nasar Hussain",
+    role: "Chair of Board",
+    bio: "Leading the board with dedication to our mission of providing healthcare and support to communities in need.",
+    location: "Preston",
   },
   {
-    name: "Sarah Thompson",
-    role: "Treasurer",
-    bio: "Chartered accountant with expertise in charity finance. Previously worked with several UK-based international charities.",
-    image: "/images/trustee-2.jpg",
-  },
-  {
-    name: "Imam Muhammad Ali",
+    name: "Haji Zahid Zafar",
     role: "Trustee",
-    bio: "Community leader and educator. Has been serving the Muslim community in the UK for over 15 years.",
-    image: "/images/trustee-3.jpg",
+    bio: "Bringing valuable experience in community outreach and project management to our Preston operations.",
+    location: "Preston",
   },
   {
-    name: "Fatima Patel",
-    role: "Secretary",
-    bio: "Social worker specializing in community development. Extensive experience in both UK and Pakistani contexts.",
-    image: "/images/trustee-4.jpg",
+    name: "Haji Nazir Hussain",
+    role: "Trustee",
+    bio: "Overseeing our Manchester initiatives and expanding our reach in the region.",
+    location: "Manchester",
+  },
+  {
+    name: "Ch. Zameer Hussain",
+    role: "Head of Gharmallah Project",
+    bio: "Leading our flagship medical aid project in Pakistan with extensive healthcare management experience.",
+    location: "Pakistan",
   },
 ];
 
@@ -148,25 +147,26 @@ export default function AboutUs() {
                   <p className="text-gray-700">
                     <strong>Charity Number:</strong> XXXXX<br />
                     <strong>Registered:</strong> England and Wales<br />
-                    <strong>Founded:</strong> 2018
+                    <strong>Founded:</strong> 2018<br />
+                    <strong>Status:</strong> Active
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-2">Registered Address</h3>
+                  <h3 className="font-semibold text-lg mb-2">Contact Information</h3>
                   <p className="text-gray-700">
-                    Meem Madaat<br />
-                    123 Charity Street<br />
-                    London, E1 2AB<br />
-                    United Kingdom
+                    For general inquiries:<br />
+                    Chair of Board: 07809 770311<br />
+                    Email: info@meemmadaat.org<br />
+                    Location: Preston, UK
                   </p>
                 </div>
               </div>
               
               <div className="mt-6 pt-6 border-t border-gray-300">
                 <p className="text-gray-700">
-                  Meem Madaat is registered with the Charity Commission for England and Wales.
-                  We are committed to full transparency and publish annual reports and accounts
-                  in accordance with charity regulations.
+                  Meem Madaat operates with full transparency and accountability, publishing regular reports
+                  and maintaining open communication with our supporters and beneficiaries. We are committed
+                  to ensuring that donations are used effectively to support our charitable objectives.
                 </p>
               </div>
             </div>

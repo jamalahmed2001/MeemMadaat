@@ -14,8 +14,11 @@ const navigation = [
     href: '/our-work',
     children: [
       { name: 'Medical Aid', href: '/our-work/medical-aid' },
-      { name: 'Homeless Support (UK)', href: '/our-work/homeless-support' },
-      { name: 'Education & Community', href: '/our-work/education' },
+      { name: 'Family Support', href: '/our-work/family-support' },
+      { name: 'Education Programs', href: '/our-work/education' },
+      { name: 'Emergency Relief', href: '/our-work/emergency-relief' },
+      { name: 'Community Development', href: '/our-work/community-development' },
+      { name: 'Food Security', href: '/our-work/food-security' },
     ],
   },
   { name: 'Impact & Reports', href: '/impact' },
@@ -148,7 +151,7 @@ export default function Layout({ children }: LayoutProps) {
       <main className="flex-grow">{children}</main>
 
       {/* Footer */}
-      <footer className="bg-dark-teal text-white mt-16">
+      <footer className="bg-dark-teal text-white">
         <div className="container-custom py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* About Section */}
@@ -170,6 +173,11 @@ export default function Layout({ children }: LayoutProps) {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/our-work" className="hover:text-gofundme-green transition-colors">
+                    Our Work
+                  </Link>
+                </li>
+                <li>
                   <Link href="/governance" className="hover:text-gofundme-green transition-colors">
                     Governance
                   </Link>
@@ -180,8 +188,8 @@ export default function Layout({ children }: LayoutProps) {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/policies" className="hover:text-gofundme-green transition-colors">
-                    Policies & Compliance
+                  <Link href="/news" className="hover:text-gofundme-green transition-colors">
+                    News
                   </Link>
                 </li>
               </ul>
@@ -197,13 +205,13 @@ export default function Layout({ children }: LayoutProps) {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/volunteer" className="hover:text-gofundme-green transition-colors">
-                    Volunteer
+                  <Link href="/get-involved" className="hover:text-gofundme-green transition-colors">
+                    Get Involved
                   </Link>
                 </li>
                 <li>
-                  <Link href="/fundraise" className="hover:text-gofundme-green transition-colors">
-                    Fundraise for Us
+                  <Link href="/contact" className="hover:text-gofundme-green transition-colors">
+                    Contact Us
                   </Link>
                 </li>
               </ul>
