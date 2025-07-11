@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import { NAVIGATION, ORGANIZATION_INFO, SOCIAL_LINKS } from '../utils/constants';
 import type { NavigationItem } from '../types';
@@ -147,9 +148,18 @@ export default function Layout({ children }: LayoutProps) {
             {/* Logo */}
             <Link 
               href="/" 
-              className="text-lg md:text-xl lg:text-2xl font-bold flex-shrink-0 min-w-fit hover:text-gofundme-green transition-colors duration-200"
+              className="flex items-center gap-3 flex-shrink-0 hover:opacity-90 transition-opacity duration-200"
             >
-              {ORGANIZATION_INFO.name}
+              <Image
+                src="/images/meem-madaat-logo.png"
+                alt="Meem Madaat Logo"
+                width={40}
+                height={40}
+                className="w-10 h-10 md:w-12 md:h-12"
+              />
+              <span className="text-lg md:text-xl lg:text-2xl font-bold hover:text-gofundme-green transition-colors duration-200">
+                {ORGANIZATION_INFO.name}
+              </span>
             </Link>
 
             {/* Desktop Navigation */}
