@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/Layout";
+import Image from "next/image";
 
 const emergencyResponses = [
   { type: "Flood Response 2023", beneficiaries: "12,000+", region: "Punjab & Sindh" },
@@ -17,6 +18,22 @@ const services = [
   "Temporary housing assistance",
   "Disaster preparedness training",
   "Community rehabilitation",
+];
+
+const emergencyReliefPhotos = [
+  // Covid 19 packages photos (sample from the many available)
+  "/photos/Covid 19 packages/imgi_39_2e6e70_0dee80a305c3428389e2877e047f4f8d~mv2.jpg",
+  "/photos/Covid 19 packages/imgi_40_2e6e70_7acc070c06e242dfb0116c2c4e3ef268~mv2.jpg",
+  "/photos/Covid 19 packages/imgi_41_2e6e70_b4a7b6739d74428ca42f4766787425e4~mv2.jpg",
+  "/photos/Covid 19 packages/imgi_42_2e6e70_ef0f324e2b77484cb812b2025971fa34~mv2.jpg",
+  "/photos/Covid 19 packages/imgi_43_2e6e70_dc50260ef4e543e3aac1723c7501512f~mv2.jpg",
+  "/photos/Covid 19 packages/imgi_44_2e6e70_1ad382b3169f4f699ab53f2341c4ae91~mv2.jpg",
+  "/photos/Covid 19 packages/imgi_45_2e6e70_447bb7eb26e6489ebd0f2ba6c8543ed8~mv2.jpg",
+  "/photos/Covid 19 packages/imgi_46_2e6e70_8d0522a1f9574ad69b4c47979294ab92~mv2.jpg",
+  "/photos/Covid 19 packages/imgi_47_2e6e70_b6718ce165384e3a94c3942c51cb4084~mv2.jpg",
+  "/photos/Covid 19 packages/imgi_48_2e6e70_cf26fd6c2076437e9c06bf1319771799~mv2.jpg",
+  "/photos/Covid 19 packages/imgi_49_2e6e70_2a0f4d573d964999a992e74508e7aa94~mv2.jpg",
+  "/photos/Covid 19 packages/imgi_50_2e6e70_74fc8c0280ba4cd895517cd0badd0ab8~mv2.jpg",
 ];
 
 export default function EmergencyRelief() {
@@ -177,13 +194,38 @@ export default function EmergencyRelief() {
         </div>
       </section>
 
-      {/* Case Study */}
+      {/* Photo Gallery */}
       <section className="py-16 bg-white">
+        <div className="container-custom">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-h2 font-semibold text-center mb-12">Emergency Relief in Action</h2>
+            <p className="text-lg text-gray-700 text-center mb-8">
+              See how we provide immediate relief during emergencies and support communities in their recovery
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {emergencyReliefPhotos.map((photo, index) => (
+                <div key={index} className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                  <Image
+                    src={photo}
+                    alt={`Emergency relief operation ${index + 1}`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Case Study */}
+      <section className="py-16 bg-light-gray">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-h2 font-semibold text-center mb-12">Stories of Impact</h2>
 
-            <div className="bg-light-gray rounded-lg p-8 shadow-sm">
+            <div className="bg-white rounded-lg p-8 shadow-sm">
               <div className="flex flex-col md:flex-row gap-8 items-center">
                 <div className="md:w-1/3">
                   <div className="w-48 h-48 bg-gray-300 rounded-full mx-auto"></div>

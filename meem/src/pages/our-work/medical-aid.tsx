@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/Layout";
+import Image from "next/image";
 
 const clinics = [
   { location: "Karachi", patients: "5,000+", established: "2019" },
@@ -17,6 +18,27 @@ const services = [
   "Basic diagnostics",
   "Medicine dispensing",
   "Health education",
+];
+
+const clinicPhotos = [
+  // Clinic 1 photos
+  "/photos/Clinic 1/imgi_15_2e6e70_447bb7eb26e6489ebd0f2ba6c8543ed8~mv2.jpg",
+  "/photos/Clinic 1/imgi_16_2e6e70_7e2799e2456c44d691f07b430d1f22d0~mv2.jpg",
+  "/photos/Clinic 1/imgi_17_2e6e70_384bdf4667e74950bf3aff572096b093~mv2.jpg",
+  "/photos/Clinic 1/imgi_18_2e6e70_8854959ab60c4c00b8f3bb108675b4e9~mv2.jpg",
+  "/photos/Clinic 1/imgi_19_2e6e70_f60e46b2e4794a1da2a2c22bc4c35276~mv2.jpg",
+  "/photos/Clinic 1/imgi_20_2e6e70_2a1f770db75f40e4ad68fd98328a87b1~mv2.jpg",
+  // Clinic 2 photos
+  "/photos/Clinic 2/imgi_21_2e6e70_53b12026c46f4e95b734f4e55e69b22a~mv2.jpg",
+  "/photos/Clinic 2/imgi_22_2e6e70_3e265a81305f4122982084425226feeb~mv2.jpg",
+  "/photos/Clinic 2/imgi_23_2e6e70_fd648c4dc6c74c6aabbe6dd56de6c302~mv2.jpg",
+  "/photos/Clinic 2/imgi_24_2e6e70_c3d505d045cc4d87af7e7b6eea3c182f~mv2.jpg",
+  "/photos/Clinic 2/imgi_25_2e6e70_39a15315e8bf401c9695a117a992fcf5~mv2.jpg",
+  "/photos/Clinic 2/imgi_26_2e6e70_2c7e8469fa56430ab4707dd8ad60320a~mv2.jpg",
+  "/photos/Clinic 2/imgi_27_2e6e70_9e31f9955abc4fd2b65f77a78f7aea4d~mv2.jpg",
+  "/photos/Clinic 2/imgi_28_2e6e70_5ddc25042cd043d39d3d5c7f2415906b~mv2.jpg",
+  "/photos/Clinic 2/imgi_29_2e6e70_f1d412c47ebb4ff7891296625eaf6f72~mv2.jpg",
+  "/photos/Clinic 2/imgi_30_2e6e70_e84abfd147444e708aabd0771866876f~mv2.jpg",
 ];
 
 export default function MedicalAid() {
@@ -127,6 +149,31 @@ export default function MedicalAid() {
                     />
                   </svg>
                   <span className="text-lg">{service}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-h2 font-semibold text-center mb-12">Our Medical Facilities</h2>
+            <p className="text-lg text-gray-700 text-center mb-8">
+              Take a look at our medical clinics and the care we provide to our patients
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {clinicPhotos.map((photo, index) => (
+                <div key={index} className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                  <Image
+                    src={photo}
+                    alt={`Medical clinic facility ${index + 1}`}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               ))}
             </div>

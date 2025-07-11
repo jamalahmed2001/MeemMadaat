@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/Layout";
+import Image from "next/image";
 
 const supportPrograms = [
   { type: "Emergency Financial Aid", families: "2,800+", launched: "2018" },
@@ -17,6 +18,14 @@ const services = [
   "Healthcare assistance",
   "Skills training programs",
   "Counseling and guidance",
+];
+
+const familySupportPhotos = [
+  // Family Support photos
+  "/photos/Family Support/imgi_13_2e6e70_ffb273c72313415687b5c62abc93b472~mv2.jpg",
+  "/photos/Family Support/imgi_14_2e6e70_1e7f2f02bb644275bcb4e781c8fafd06~mv2.jpg",
+  // Elderly & Orphans photos
+  "/photos/Elderly & Orphans /imgi_9_2e6e70_bafbbdae55274d0abe7ca1787862fe61~mv2.jpg",
 ];
 
 export default function FamilySupport() {
@@ -127,6 +136,31 @@ export default function FamilySupport() {
                     />
                   </svg>
                   <span className="text-lg">{service}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-h2 font-semibold text-center mb-12">Supporting Our Families</h2>
+            <p className="text-lg text-gray-700 text-center mb-8">
+              See how we're making a difference in the lives of vulnerable families and elderly community members
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {familySupportPhotos.map((photo, index) => (
+                <div key={index} className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                  <Image
+                    src={photo}
+                    alt={`Family support program ${index + 1}`}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               ))}
             </div>

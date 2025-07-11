@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/Layout";
+import Image from "next/image";
 
 const developmentPrograms = [
   { type: "Water & Sanitation", projects: "45+", beneficiaries: "18,000+" },
@@ -17,6 +18,21 @@ const services = [
   "Community center development",
   "Women's skills training",
   "Youth mentorship programs",
+];
+
+const communityDevelopmentPhotos = [
+  // Water Projects photos
+  "/photos/Water Projects/imgi_10_2e6e70_180f575ab8fc41999539114d0cb568c2~mv2.jpg",
+  "/photos/Water Projects/imgi_11_2e6e70_dcc9e11754ad4195bfc6f0ce94752df5~mv2.jpg",
+  "/photos/Water Projects/imgi_12_2e6e70_7b472245a5c34fb58539d42a2177f492~mv2.jpg",
+  // Mosque photos
+  "/photos/Mosque/imgi_31_2e6e70_62d221b711dc4b3f98381982192ebe2f~mv2.jpg",
+  "/photos/Mosque/imgi_32_2e6e70_9ce6b069754b499aa3ecec9ad3170713~mv2.jpg",
+  "/photos/Mosque/imgi_33_2e6e70_1d2902ace08f436891a0f0cc00533ffd~mv2.jpg",
+  // Launch photos
+  "/photos/Launch/imgi_6_2e6e70_fb0b504540164cd1878064b6686508d3~mv2.jpg",
+  "/photos/Launch/imgi_7_2e6e70_b27b0f56d98042929a95976e15b8d41a~mv2.jpg",
+  "/photos/Launch/imgi_8_2e6e70_7fca97aaadf841fb9f6373a9591c95e4~mv2.jpg",
 ];
 
 export default function CommunityDevelopment() {
@@ -176,13 +192,38 @@ export default function CommunityDevelopment() {
         </div>
       </section>
 
-      {/* Case Study */}
+      {/* Photo Gallery */}
       <section className="py-16 bg-white">
+        <div className="container-custom">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-h2 font-semibold text-center mb-12">Community Development Projects</h2>
+            <p className="text-lg text-gray-700 text-center mb-8">
+              From water wells to mosques, from launches to community centers - see the projects that are transforming lives
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {communityDevelopmentPhotos.map((photo, index) => (
+                <div key={index} className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                  <Image
+                    src={photo}
+                    alt={`Community development project ${index + 1}`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Case Study */}
+      <section className="py-16 bg-light-gray">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-h2 font-semibold text-center mb-12">Stories of Impact</h2>
 
-            <div className="bg-light-gray rounded-lg p-8 shadow-sm">
+            <div className="bg-white rounded-lg p-8 shadow-sm">
               <div className="flex flex-col md:flex-row gap-8 items-center">
                 <div className="md:w-1/3">
                   <div className="w-48 h-48 bg-gray-300 rounded-full mx-auto"></div>

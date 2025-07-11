@@ -243,6 +243,118 @@ export default function Donate() {
         </div>
       </section>
 
+      {/* Alternative Payment Methods */}
+      <section className="pt-16 bg-light-gray">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-h2 font-semibold text-center mb-12">
+              Alternative Payment Methods
+            </h2>
+
+            {/* Bank Transfer */}
+            <div className="bg-white p-8 rounded-lg mb-8">
+              <h3 className="text-2xl font-semibold mb-4 flex items-center">
+                <span className="text-2xl mr-3">🏦</span>
+                Bank Transfer & Standing Orders
+              </h3>
+              <p className="text-gray-700 mb-6">
+                You can set up a one-off payment or a regular standing order directly into our account:
+              </p>
+              
+              <div className="bg-light-gray p-6 rounded-lg mb-6">
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <p className="font-semibold text-gray-800 mb-1">Bank name:</p>
+                    <p className="text-gray-700">Lloyds Bank</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-800 mb-1">Branch:</p>
+                    <p className="text-gray-700">Fishergate, Preston, Lancashire, UK</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-800 mb-1">Account name:</p>
+                    <p className="text-gray-700">Meem Madaat Welfare Group</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-800 mb-1">Account number:</p>
+                    <p className="text-gray-700 font-mono">4955 5260</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-800 mb-1">Sort code:</p>
+                    <p className="text-gray-700 font-mono">30-96-85</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h4 className="font-semibold text-gray-800 mb-3">To set up a standing order:</h4>
+                <p className="text-gray-700 mb-3">
+                  Ask your bank to debit from your account at your chosen frequency:
+                </p>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-center">
+                    <span className="font-semibold w-32">Minimum amount:</span>
+                    <span>£3</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="font-semibold w-32">Frequency:</span>
+                    <span>Weekly / Monthly (tick one)</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="font-semibold w-32">Reference:</span>
+                    <span className="font-mono">"MMW – [Your Name]"</span>
+                  </li>
+                </ul>
+                <p className="text-sm text-gray-600 mt-4 italic">
+                  <strong>Tip:</strong> Many banks let you upload a PDF of our sample form. If you need a paper copy, 
+                  our volunteers can drop one off or mail it to you—just contact us at the number below.
+                </p>
+              </div>
+            </div>
+
+            {/* Gift Aid */}
+            <div className="bg-white p-8 rounded-lg mb-8">
+              <h3 className="text-2xl font-semibold mb-4 flex items-center">
+                <span className="text-2xl mr-3">🎁</span>
+                Gift Aid
+              </h3>
+              <p className="text-gray-700">
+                If you're a UK taxpayer, you can add 25% more to your gift at no extra cost—just tick the Gift Aid box 
+                in your donation form or let us know after you give.
+              </p>
+            </div>
+
+            {/* Contact for Donations */}
+            <div className="bg-white p-8 rounded-lg">
+              <h3 className="text-2xl font-semibold mb-4 flex items-center">
+                <span className="text-2xl mr-3">📞</span>
+                Donate via Contact
+              </h3>
+              <p className="text-gray-700 mb-6">
+                If you'd prefer to arrange cash or cheque donations, please call or WhatsApp:
+              </p>
+              
+              <div className="bg-gofundme-green/10 p-6 rounded-lg">
+                <div className="flex items-center">
+                  <div className="w-16 h-16 bg-gofundme-green/20 rounded-full flex items-center justify-center mr-4">
+                    <svg className="w-8 h-8 text-gofundme-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-800 text-lg">Brother Kamran Ahmed</p>
+                    <p className="text-gofundme-green font-semibold text-xl">☎️ 07855 828060</p>
+                    <p className="text-gray-600 text-sm mt-2">
+                      He'll be happy to help you set up a standing order form, collect donations, or answer any questions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Additional Information */}
       <section className="py-16 bg-light-gray">
         <div className="container-custom">
