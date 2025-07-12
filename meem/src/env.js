@@ -17,6 +17,9 @@ export const env = createEnv({
     NODE_ENV: z
       .enum(["development", "test", "production"])
       .default("development"),
+    GITHUB_OWNER: z.string().optional(),
+    GITHUB_REPO: z.string().optional(),
+    VIDEO_CDN_URL: z.string().url().optional(),
   },
 
   /**
@@ -38,6 +41,9 @@ export const env = createEnv({
     AUTH_DISCORD_SECRET: process.env.AUTH_DISCORD_SECRET,
     DATABASE_URL: process.env.DATABASE_URL,
     NODE_ENV: process.env.NODE_ENV,
+    GITHUB_OWNER: process.env.GITHUB_OWNER,
+    GITHUB_REPO: process.env.GITHUB_REPO,
+    VIDEO_CDN_URL: process.env.VIDEO_CDN_URL,
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially

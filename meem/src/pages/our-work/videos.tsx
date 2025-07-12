@@ -3,6 +3,7 @@ import Link from "next/link";
 import Layout from "../../components/Layout";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import { videoConfig } from "../../utils/video-config";
 
 interface Video {
   title: string;
@@ -546,8 +547,22 @@ export default function Videos() {
                       controls
                       className="w-full h-full object-cover"
                       preload="metadata"
+                      onError={(e) => {
+                        const target = e.target as HTMLVideoElement;
+                        const parent = target.parentElement;
+                        if (parent) {
+                          parent.innerHTML = `
+                            <div class="flex items-center justify-center h-full bg-gray-100">
+                              <div class="text-center p-4">
+                                <p class="text-gray-600 mb-2">Video temporarily unavailable</p>
+                                <p class="text-sm text-gray-500">Please check back later</p>
+                              </div>
+                            </div>
+                          `;
+                        }
+                      }}
                     >
-                      <source src={`/videos/${video.filename}`} type="video/mp4" />
+                      <source src={videoConfig.getVideoUrl(video.filename)} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>

@@ -1,0 +1,12 @@
+{
+  "build": {
+    "env": {
+      "ENABLE_FILE_SYSTEM_API": "1"
+    }
+  },
+  "functions": {
+    "src/pages/api/videos/[filename].ts": {
+      "maxDuration": 30
+    }
+  }
+} 
