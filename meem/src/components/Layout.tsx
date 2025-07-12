@@ -299,7 +299,11 @@ export default function Layout({ children }: LayoutProps) {
                 {['Home', 'About Us', 'Governance', 'Impact & Reports', 'Stories', 'News'].map((link) => (
                   <li key={link}>
                     <Link 
-                      href={link === 'Home' ? '/' : `/${link.toLowerCase().replace(/\s+/g, '-').replace('&', '')}`}
+                      href={
+                        link === 'Home' ? '/' : 
+                        link === 'About Us' ? '/about' :
+                        `/${link.toLowerCase().replace(/\s+/g, '-').replace('&', '')}`
+                      }
                       className="hover:text-gofundme-green transition-colors duration-200 block py-1"
                     >
                       {link}
