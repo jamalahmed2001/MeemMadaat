@@ -454,8 +454,8 @@ export default function Videos() {
 
   const filteredVideos = videos.filter(video => {
     const matchesCategory = selectedCategory === "All" || video.category === selectedCategory;
-    const matchesSearch = video.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         (video.description && video.description.toLowerCase().includes(searchTerm.toLowerCase()));
+    const matchesSearch = video.title.toLowerCase().includes(searchTerm.toLowerCase()) ??
+                         video.description?.toLowerCase().includes(searchTerm.toLowerCase()) ?? false;
     return matchesCategory && matchesSearch;
   });
 
