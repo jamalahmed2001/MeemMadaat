@@ -3,6 +3,8 @@ import type { NavigationItem, OrganizationInfo, SocialLinks } from '../types';
 export const NAVIGATION: NavigationItem[] = [
   { name: 'Home', href: '/' },
   { name: 'About Us', href: '/about' },
+  { name: 'Governance', href: '/governance' },
+
   {
     name: 'Our Work',
     href: '/our-work',
@@ -25,8 +27,13 @@ export const NAVIGATION: NavigationItem[] = [
       { name: 'Fundraise', href: '/fundraise' },
     ],
   },
-  { name: 'Impact & Reports', href: '/impact' },
-  { name: 'News', href: '/news' },
+  {
+    name: 'Impact & Reports',
+    href: '/impact',
+    children: [
+      { name: 'Stories', href: '/stories' },
+    ],
+  },  { name: 'News', href: '/news' },
   { name: 'Contact', href: '/contact' },
 ];
 

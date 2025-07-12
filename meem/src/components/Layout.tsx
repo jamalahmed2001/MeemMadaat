@@ -70,7 +70,7 @@ export default function Layout({ children }: LayoutProps) {
         <Link
           href={item.href}
           className={`hover:text-gofundme-green transition-colors duration-200 ${
-            isMobile ? 'block py-2 px-3 rounded-md hover:bg-white/10 text-sm' : 'text-sm xl:text-base whitespace-nowrap'
+            isMobile ? 'block py-2 px-3 rounded-md hover:bg-white/10 text-sm' : 'text-xs lg:text-sm xl:text-base whitespace-nowrap'
           }`}
           onClick={() => isMobile && setMobileMenuOpen(false)}
         >
@@ -85,7 +85,7 @@ export default function Layout({ children }: LayoutProps) {
           <Link
             href={item.href}
             className={`hover:text-gofundme-green transition-colors duration-200 ${
-              isMobile ? 'block py-2 px-3 rounded-md hover:bg-white/10 text-sm' : 'py-2 text-sm xl:text-base whitespace-nowrap'
+              isMobile ? 'block py-2 px-3 rounded-md hover:bg-white/10 text-sm' : 'py-2 text-xs lg:text-sm xl:text-base whitespace-nowrap'
             }`}
             onClick={() => isMobile && setMobileMenuOpen(false)}
           >
@@ -93,13 +93,13 @@ export default function Layout({ children }: LayoutProps) {
           </Link>
           {!isMobile && (
             <button
-              className="ml-1 hover:text-gofundme-green transition-colors duration-200 py-2"
+              className="ml-0.5 hover:text-gofundme-green transition-colors duration-200 py-2"
               onClick={() => toggleDropdown(item.name)}
               aria-label={`Toggle ${item.name} menu`}
               aria-expanded={openDropdown === item.name}
             >
               <svg
-                className={`h-4 w-4 transition-transform duration-200 ${
+                className={`h-3 w-3 lg:h-4 lg:w-4 transition-transform duration-200 ${
                   openDropdown === item.name ? 'rotate-180' : ''
                 }`}
                 fill="none"
@@ -156,19 +156,19 @@ export default function Layout({ children }: LayoutProps) {
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="bg-dark-teal text-white sticky top-0 z-50">
-        <nav ref={navRef} className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <nav ref={navRef} className="w-full max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link 
               href="/" 
-              className="flex items-center gap-3 flex-shrink-0 hover:opacity-90 transition-opacity duration-200"
+              className="flex items-center gap-2 lg:gap-3 flex-shrink-0 hover:opacity-90 transition-opacity duration-200"
             >
               <Image
                 src="/images/meem-madaat-logo.png"
                 alt="Meem Madaat Logo"
                 width={40}
                 height={40}
-                className="w-10 h-10 md:w-12 md:h-12"
+                className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
               />
               <span className="text-lg md:text-xl lg:text-2xl font-bold hover:text-gofundme-green transition-colors duration-200">
                 {ORGANIZATION_INFO.name}
@@ -176,17 +176,48 @@ export default function Layout({ children }: LayoutProps) {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-4 xl:space-x-6 2xl:space-x-8 flex-1 justify-end">
+            <div className="hidden lg:flex items-center space-x-1 xl:space-x-2 2xl:space-x-4 flex-1 justify-end">
               {NAVIGATION.map((item) => (
                 <div key={item.name}>{renderNavItem(item)}</div>
               ))}
               <Link 
                 href="/donate" 
-                className="btn-primary text-sm xl:text-base whitespace-nowrap ml-4"
+                className="btn-primary text-xs lg:text-sm xl:text-base whitespace-nowrap ml-1 xl:ml-2 2xl:ml-4 px-3 lg:px-4 py-1.5 lg:py-2"
               >
                 Donate Now
               </Link>
             </div>
+
+            {/* Tablet menu button (lg screens) */}
+            <button
+              className="hidden lg:flex xl:hidden p-2 rounded-md hover:bg-white/10 transition-colors duration-200"
+              onClick={toggleMobileMenu}
+              aria-label="Toggle mobile menu"
+              aria-expanded={mobileMenuOpen}
+            >
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {mobileMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
 
             {/* Mobile menu button */}
             <button
@@ -249,7 +280,7 @@ export default function Layout({ children }: LayoutProps) {
 
       {/* Footer */}
       <footer className="bg-dark-teal text-white mt-auto">
-        <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 lg:py-16">
+        <div className="w-full max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 lg:py-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 xl:gap-12">
             {/* About Section */}
             <div className="sm:col-span-2 lg:col-span-1">
