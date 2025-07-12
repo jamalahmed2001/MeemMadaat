@@ -398,6 +398,19 @@ export default function OurWork() {
         </div>
       </section>
 
+      {/* Videos Section */}
+      <section className="py-16 bg-light-gray">
+        <div className="container-custom text-center">
+          <h2 className="text-h2 font-semibold mb-4">Watch Our Impact</h2>
+          <p className="text-lg text-gray-600 mb-8 mx-auto">
+            See our work in action through videos showcasing our various programs and their impact on communities.
+          </p>
+          <Link href="/our-work/videos" className="btn-primary">
+            View All Videos →
+          </Link>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-16 bg-gofundme-green text-white">
         <div className="container-custom text-center">

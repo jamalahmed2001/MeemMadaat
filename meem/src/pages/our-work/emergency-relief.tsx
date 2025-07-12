@@ -253,6 +253,53 @@ export default function EmergencyRelief() {
         </div>
       </section>
 
+      {/* Featured Videos */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <h2 className="text-h2 font-semibold text-center mb-12">Emergency Response Videos</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="aspect-video bg-gray-200">
+                <video controls className="w-full h-full object-cover" preload="metadata">
+                  <source src="/videos/27 - Meem madaat urgent Appeal - Raising funds for Pakistan flood victims 2022.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-2">Pakistan Flood Relief 2022</h3>
+                <p className="text-sm text-gray-600">Urgent appeal for flood victims in Pakistan</p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="aspect-video bg-gray-200">
+                <video controls className="w-full h-full object-cover" preload="metadata">
+                  <source src="/videos/29 - Helping the flood victims of Bangladesh.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-2">Bangladesh Flood Response</h3>
+                <p className="text-sm text-gray-600">Providing aid to flood-affected communities</p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="aspect-video bg-gray-200">
+                <video controls className="w-full h-full object-cover" preload="metadata">
+                  <source src="/videos/30 - Raising funds to Help the victims of The Earthquake victims.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-2">Earthquake Relief Appeal</h3>
+                <p className="text-sm text-gray-600">Emergency response for earthquake victims</p>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/our-work/videos?category=Emergency%20Relief" className="btn-primary">
+              View All Emergency Relief Videos →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-16 bg-gofundme-green text-white">
         <div className="container-custom text-center">

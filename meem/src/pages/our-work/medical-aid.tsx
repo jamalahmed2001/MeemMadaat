@@ -214,6 +214,53 @@ export default function MedicalAid() {
         </div>
       </section>
 
+      {/* Featured Videos */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <h2 className="text-h2 font-semibold text-center mb-12">Watch Our Clinics in Action</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="aspect-video bg-gray-200">
+                <video controls className="w-full h-full object-cover" preload="metadata">
+                  <source src="/videos/32 - MEEM MADAAT WELFARE CLINIC NUMBER 1 (RAMADAN KAREEM update promo 2022).mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-2">Clinic 1 - Ramadan Update</h3>
+                <p className="text-sm text-gray-600">See our first welfare clinic's impact during Ramadan 2022</p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="aspect-video bg-gray-200">
+                <video controls className="w-full h-full object-cover" preload="metadata">
+                  <source src="/videos/08 - [YT2mp3.info] - Meem madaat welfare Eye vision  Camp for the poor & local community.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-2">Eye Vision Camp</h3>
+                <p className="text-sm text-gray-600">Free eye care camp providing vision tests and glasses</p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="aspect-video bg-gray-200">
+                <video controls className="w-full h-full object-cover" preload="metadata">
+                  <source src="/videos/61 - doctor update clinic 1.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-2">Doctor Update</h3>
+                <p className="text-sm text-gray-600">Hear from our doctors about the impact of free healthcare</p>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/our-work/videos?category=Medical%20Aid" className="btn-primary">
+              View All Medical Aid Videos →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-16 bg-gofundme-green text-white">
         <div className="container-custom text-center">

@@ -13,6 +13,7 @@ export const NAVIGATION: NavigationItem[] = [
       { name: 'Food Security', href: '/our-work/food-security' },
       { name: 'Community Development', href: '/our-work/community-development' },
       { name: 'Family Support', href: '/our-work/family-support' },
+      { name: 'Videos', href: '/our-work/videos' },
     ],
   },
   {
