@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 // Real Meem Madaat timeline from llm.md
 const timeline = [
   { year: "1 January 2016", event: "Meem Madaat conceived by UK volunteers with family ties to rural Punjab, Pakistan, inspired by Islamic principles of service and inclusivity." },
-  { year: "15 January 2018", event: "Meem Madaat CIO formally founded in Preston, UK. Constitution adopted (Charity No. XXXXX) detailing objects: poverty relief, health, education, cohesion." },
+  { year: "15 January 2018", event: "Meem Madaat formally established as a charitable group in Preston, UK. Constitution adopted detailing objects: poverty relief, health, education, cohesion." }, 
   { year: "June 2018", event: "First clean-water pump installed in Gharmallah, Pakistan—bringing safe water to 200+ families and cutting water-borne diseases." },
   { year: "December 2018", event: "Inaugural UK homeless outreach: Delivered 150 hot-meal packs, blankets & hygiene kits to local shelters in Preston." },
   { year: "March 2019", event: "Clinic #1 opens in Gharmallah: weekly medical camp with volunteer doctors offering general check-ups & antenatal care." },
@@ -97,7 +97,7 @@ export default function AboutUs() {
   return (
     <Layout>
       <Head>
-        <title>About Us - Meem Madaat | UK Registered Charity</title>
+        <title>About Us - Meem Madaat | UK Charitable Group</title>
         <meta
           name="description"
           content="Learn about Meem Madaat's history since 2016, mission, values, and the team behind our charitable work in the UK and Pakistan."
@@ -256,7 +256,7 @@ export default function AboutUs() {
                 Meem Madaat was conceived on <strong>1 January 2016</strong> by a small group of UK volunteers with family ties to rural Punjab, Pakistan. Inspired by Islamic principles of service and inclusivity, our founders set out to help poverty-stricken villages in the Jhelum district, while also supporting vulnerable people in Preston.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
-                From these humble beginnings, we formally registered as a CIO (Charitable Incorporated Organisation) in England & Wales on <strong>15 January 2018</strong>, establishing our constitutional framework and charitable objects focused on poverty relief, health advancement, education, and community cohesion.
+                From these humble beginnings, we formally established ourselves as a charitable group on <strong>15 January 2018</strong>, adopting our constitutional framework and charitable objects focused on poverty relief, health advancement, education, and community cohesion. We are currently working towards official charity registration.
               </p>
             </div>
           </div>
@@ -345,48 +345,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Charity Status Section */}
-      <section className="py-16 bg-white">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-h2 font-semibold text-center mb-12">Charity Status</h2>
-            
-            <div className="bg-light-gray p-8 rounded-lg">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h3 className="font-semibold text-lg mb-2">Registration Details</h3>
-                  <p className="text-gray-700">
-                    <strong>Charity Number:</strong> XXXXX<br />
-                    <strong>Registered:</strong> England and Wales<br />
-                    <strong>Founded:</strong> 2016 (Formal registration: 2018)<br />
-                    <strong>Status:</strong> Active CIO<br />
-                    <strong>Type:</strong> Charitable Incorporated Organisation
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2">Contact Information</h3>
-                  <p className="text-gray-700">
-                    For general inquiries:<br />
-                    Chair of Board: 07809 770311<br />
-                    Kamran Ahmed: 07855 828060<br />
-                    Email: Meemmadaat@gmail.com<br />
-                    Location: Preston, UK
-                  </p>
-                </div>
-              </div>
-              
-              <div className="mt-6 pt-6 border-t border-gray-300">
-                <p className="text-gray-700">
-                  Meem Madaat operates with full transparency and accountability, publishing regular reports
-                  and maintaining open communication with our supporters and beneficiaries. We are committed
-                  to ensuring that 95% of donations go directly to charitable activities, with comprehensive
-                  governance oversight and independent examination of our accounts.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Our Team Section */}
       <section className="py-16 bg-light-gray">

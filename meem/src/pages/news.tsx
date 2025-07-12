@@ -161,11 +161,11 @@ const newsArticles = [
   },
   {
     id: 18,
-    title: "Meem Madaat Officially Registered as UK Charity",
+    title: "Meem Madaat Formally Established as Charitable Group",
     date: "January 15, 2018",
     author: "Meem Madaat Founders",
     category: "Milestones",
-    excerpt: "Meem Madaat was formally registered as a Charitable Incorporated Organisation (CIO) in England & Wales. Our constitution was adopted, detailing our charitable objects: poverty relief, health advancement, education, and community cohesion. This registration marked our transition from community group to formal charity.",
+      excerpt: "Meem Madaat was formally established as a charitable group in England & Wales. Our constitution was adopted, detailing our charitable objects: poverty relief, health advancement, education, and community cohesion. This establishment marked our transition from community group to formal charity.",
     image: "/photos/Launch/imgi_6_2e6e70_fb0b504540164cd1878064b6686508d3~mv2.jpg",
   },
   {
@@ -280,7 +280,7 @@ export default function News() {
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-gofundme-green mb-2">2018</div>
-                  <p className="text-sm text-gray-600">Formal charity registration & first water pump</p>
+                  <p className="text-sm text-gray-600">Formal establishment & first water pump</p>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-gofundme-green mb-2">2019</div>

@@ -7,7 +7,7 @@ const Constitution = () => {
       <div className="policy-container">
         <div className="policy-header">
           <h1 className="policy-title">Constitution of Meem Madaat</h1>
-          <p className="policy-subtitle">Charitable Incorporated Organisation (CIO)</p>
+          <p className="policy-subtitle">Charitable Group</p>
           <p className="policy-subtitle">Adopted: 15 January 2018</p>
           <p className="policy-subtitle">Last Amended: 20 March 2023</p>
         </div>
@@ -18,7 +18,7 @@ const Constitution = () => {
             <span className="policy-emphasis">Name:</span> The organisation shall be known as Meem Madaat (hereafter "the Charity").
           </p>
           <p className="policy-paragraph">
-            <span className="policy-emphasis">Legal Status:</span> Meem Madaat is registered as a charitable incorporated organisation (CIO) under the Charities Act 2011, Charity Commission registration number XXXXX.
+            <span className="policy-emphasis">Legal Status:</span> Meem Madaat is a charitable group working towards formal registration as a charitable incorporated organisation (CIO) under the Charities Act 2011.
           </p>
           <p className="policy-paragraph">
             <span className="policy-emphasis">Principal Office:</span> The Charity's registered office is located at: 123 Community Lane, Preston, PR1 2AB, England.
@@ -225,7 +225,7 @@ const Constitution = () => {
 
         <footer className="policy-section" style={{ borderTop: '1px solid #E5E7EB', paddingTop: '1.5rem', textAlign: 'center', color: '#666' }}>
           <p>This constitution was adopted on 15 January 2018 and last amended on 20 March 2023.</p>
-          <p>Meem Madaat is a registered charity in England and Wales (Charity No. XXXXX)</p>
+          <p>Meem Madaat is a charitable group based in England and Wales</p>
           <p>Registered Office: 123 Community Lane, Preston, PR1 2AB, England</p>
         </footer>
       </div>

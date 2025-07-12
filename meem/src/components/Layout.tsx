@@ -259,9 +259,6 @@ export default function Layout({ children }: LayoutProps) {
               <p className="text-sm md:text-base text-white/80 leading-relaxed mb-4">
                 {ORGANIZATION_INFO.tagline}
               </p>
-              <p className="text-sm text-white/60">
-                UK Registered Charity No. {ORGANIZATION_INFO.charityNumber}
-              </p>
             </div>
 
             {/* Quick Links */}
@@ -405,8 +402,7 @@ export default function Layout({ children }: LayoutProps) {
 
           <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-white/20 text-center">
             <p className="text-xs md:text-sm text-white/60">
-              &copy; {new Date().getFullYear()} {ORGANIZATION_INFO.name}. All rights reserved. 
-              Registered Charity No. {ORGANIZATION_INFO.charityNumber}
+              &copy; {new Date().getFullYear()} {ORGANIZATION_INFO.name}. All rights reserved.
             </p>
             <p className="text-xs text-white/40 mt-2">
               {ORGANIZATION_INFO.donationPolicy}

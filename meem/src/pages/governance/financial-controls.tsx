@@ -21,7 +21,7 @@ const FinancialControls = () => {
           </p>
           <ul className="policy-list">
             <li>Safeguard the charity's assets and ensure they are used solely for charitable purposes</li>
-            <li>Ensure compliance with Charity Commission regulations and HMRC requirements</li>
+            <li>Ensure compliance with best practices for charitable organizations and HMRC requirements</li>
             <li>Maintain accurate financial records and reporting</li>
             <li>Prevent fraud and financial mismanagement</li>
           </ul>
@@ -236,10 +236,10 @@ const FinancialControls = () => {
               Statutory accounts prepared in accordance with:
             </p>
             <ul className="policy-list">
-              <li>Charities SORP (FRS 102)</li>
-              <li>Charity Commission requirements</li>
+              <li>Best practices for charitable organizations</li>
+              <li>Applicable accounting standards</li>
               <li>Include trustees' annual report</li>
-              <li>File with Charity Commission within 10 months</li>
+              <li>Prepare for future regulatory requirements</li>
             </ul>
           </div>
         </section>

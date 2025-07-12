@@ -311,7 +311,7 @@ export default function GetInvolved() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Trusted Organization</h3>
               <p className="text-gray-600">
-                Work with a UK registered charity with proven impact
+                Work with a UK charitable group with proven impact
               </p>
             </div>
           </div>

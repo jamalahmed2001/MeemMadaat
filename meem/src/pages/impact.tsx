@@ -193,7 +193,7 @@ const annualImpact = [
   {
     year: "2018",
     highlights: [
-      "Official charity registration (15 January 2018)",
+                  "Formal establishment as charitable group (15 January 2018)",
       "First clean water pump installed",
       "First UK homeless outreach program"
     ],

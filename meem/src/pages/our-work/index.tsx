@@ -103,7 +103,7 @@ export default function OurWork() {
             thousands across the UK, Pakistan, and globally wherever we can help and provide support.
           </p>
           <div className="mt-8 text-sm opacity-90">
-            <p>Serving communities since 2019 • UK Registered Charity</p>
+                          <p>Serving communities since 2016 • UK Charitable Group</p>
           </div>
         </div>
       </section>

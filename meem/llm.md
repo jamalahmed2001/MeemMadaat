@@ -43,7 +43,7 @@ This markdown file provides comprehensive context and guidance for developers an
 
 ## Project Overview
 
-Meem Madaat is a UK-registered charity (Charity No. XXXXX) with a mission to relieve poverty, advance healthcare, and promote social cohesion in the UK and Pakistan. This project entails building a modern, accessible website in line with Charity Commission standards, featuring transparent governance, robust content, and user engagement.
+Meem Madaat is a UK-based charitable group working towards official charity registration, with a mission to relieve poverty, advance healthcare, and promote social cohesion in the UK and Pakistan. This project entails building a modern, accessible website in line with best practices for charitable organizations, featuring transparent governance, robust content, and user engagement.
 
 **Key Objectives:**
 
@@ -195,7 +195,7 @@ Home
 * **Hero Section**
   * Fullscreen background image of beneficiaries or smiling faces
   * Headline: "Help Us Make a Difference"
-  * Subheadline: "UK-registered charity serving communities since 2019"
+  * Subheadline: "UK charitable group serving communities since 2016"
   * Impact counter: "X years of service, Y projects completed, Z lives touched"
   * Primary CTA: "Donate now" button (styled in GoFundMe green #3AB795)
 
@@ -233,8 +233,9 @@ Home
   * Religious and cultural sensitivity
   * Sustainable development focus
 
-* **Charity Status**
-  * UK charity registration number
+* **Organization Status**
+  * UK-based charitable group
+  * Working towards official charity registration
   * Registered address and contact information
   * Legal compliance and regulatory information
 

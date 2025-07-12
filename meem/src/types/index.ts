@@ -7,7 +7,6 @@ export interface NavigationItem {
 export interface OrganizationInfo {
   name: string;
   tagline: string;
-  charityNumber: string;
   donationPolicy: string;
   contact: {
     email: string;

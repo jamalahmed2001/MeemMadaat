@@ -154,7 +154,7 @@ const ConflictsOfInterest = () => {
               <li>First breach: Formal warning and mandatory training</li>
               <li>Repeated breach: Removal from position</li>
               <li>Serious breach involving financial gain: Potential legal action</li>
-              <li>All breaches reported to Charity Commission if required</li>
+              <li>All breaches documented and reviewed by the Board</li>
             </ul>
           </div>
         </section>

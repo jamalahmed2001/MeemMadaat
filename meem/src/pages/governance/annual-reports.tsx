@@ -124,7 +124,7 @@ export default function AnnualReports() {
             <p className="text-lg text-gray-700 mb-8">
               We believe in complete transparency and accountability to our donors and beneficiaries.
               Our annual reports provide detailed information about our income, expenditure, and impact.
-              All reports are independently examined and comply with UK charity regulations.
+              All reports are independently examined and prepared in line with best practices for charitable organizations.
             </p>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -268,12 +268,12 @@ export default function AnnualReports() {
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="card">
-                <h3 className="text-xl font-semibold mb-4">Charity Registration</h3>
-                <p className="text-gray-700 mb-4">
-                  Meem Madaat is a registered charity in England and Wales.
-                </p>
+                <h3 className="text-xl font-semibold mb-4">Organization Status</h3>
+                                  <p className="text-gray-700 mb-4">
+                    Meem Madaat is a charitable group working towards official charity registration in England and Wales.
+                  </p>
                 <div className="space-y-2 text-sm">
-                  <div><strong>Charity Number:</strong> 1234567</div>
+
                   <div><strong>Registered Address:</strong> 123 Main Street, Preston, PR1 1AA</div>
                   <div><strong>Registration Date:</strong> 15 January 2018</div>
                 </div>

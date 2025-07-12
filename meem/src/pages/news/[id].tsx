@@ -395,14 +395,14 @@ const newsArticles = [
   },
   {
     id: 18,
-    title: "Meem Madaat Officially Registered as UK Charity",
+    title: "Meem Madaat Formally Established as Charitable Group",
     date: "January 15, 2018",
     author: "Meem Madaat Founders",
     category: "Milestones",
-    excerpt: "Meem Madaat was formally registered as a Charitable Incorporated Organisation (CIO) in England & Wales. Our constitution was adopted, detailing our charitable objects: poverty relief, health advancement, education, and community cohesion. This registration marked our transition from community group to formal charity.",
+      excerpt: "Meem Madaat was formally established as a charitable group in England & Wales. Our constitution was adopted, detailing our charitable objects: poverty relief, health advancement, education, and community cohesion. This establishment marked our transition from community group to formal charity.",
     image: "/photos/Launch/imgi_6_2e6e70_fb0b504540164cd1878064b6686508d3~mv2.jpg",
     content: `
-      <p>January 15, 2018, represents a pivotal moment in Meem Madaat's history - the day we were formally registered as a Charitable Incorporated Organisation (CIO) in England & Wales, marking our transition from a community group to a legally recognized charity.</p>
+              <p>January 15, 2018, represents a pivotal moment in Meem Madaat's history - the day we were formally established as a charitable group in England & Wales, marking our commitment to structured charitable work with the aim of achieving official charity status.</p>
       
       <p>This registration represented the culmination of two years of careful planning, legal consultation, and community engagement to ensure that our charitable structure would effectively serve our mission for years to come.</p>
       
@@ -413,7 +413,7 @@ const newsArticles = [
       <p>The registration established our governance structure with a Board of Trustees, clear accountability mechanisms, and transparent financial management systems that ensure donor funds are used effectively and ethically.</p>
       
       <h3>Legal Compliance</h3>
-      <p>Formal charity status brought us under the regulation of the Charity Commission for England and Wales, ensuring we meet the highest standards of charity governance and public accountability.</p>
+                  <p>Our formal establishment as a charitable group set us on the path towards official registration. We are committed to meeting the highest standards of charity governance and public accountability as we work towards CIO status.</p>
       
       <h3>Enhanced Credibility</h3>
       <p>Registration significantly enhanced our credibility with donors, partner organizations, and beneficiaries, enabling us to secure larger grants and develop more substantial partnerships.</p>
@@ -442,7 +442,7 @@ const newsArticles = [
       <p>The founders' personal connections to rural Punjab provided invaluable insights into community needs and cultural sensitivity, ensuring that our programs would be developed with deep understanding of local contexts and priorities.</p>
       
       <h3>Growth From Humble Beginnings</h3>
-      <p>What began as informal conversations among friends has grown into a registered charity serving thousands of beneficiaries across two countries, demonstrating the power of collective action and sustained commitment to positive change.</p>
+              <p>What began as informal conversations among friends has grown into a structured charitable group serving thousands of beneficiaries across two countries, demonstrating the power of collective action and sustained commitment to positive change.</p>
     `,
   },
 ];

@@ -101,7 +101,7 @@ const ComplaintsProcedure = () => {
               If you remain dissatisfied, you can contact:
             </p>
             <ul className="policy-list">
-              <li>The Charity Commission</li>
+              <li>Relevant regulatory bodies when we achieve charity status</li>
               <li>The Fundraising Regulator (for fundraising complaints)</li>
               <li>Your local Trading Standards office</li>
             </ul>

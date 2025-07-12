@@ -14,7 +14,7 @@ const SafeguardingPolicy = () => {
         <section className="policy-section">
           <h2 className="policy-section-title">Introduction</h2>
           <p className="policy-paragraph">
-            Meem Madaat is committed to providing a safe environment for all participants, particularly children (under 18) and vulnerable adults, in line with the Charity Commission's Safeguarding Guidance and the UK's Children Act 1989.
+            Meem Madaat is committed to providing a safe environment for all participants, particularly children (under 18) and vulnerable adults, in line with best practices for charitable organizations and the UK's Children Act 1989.
           </p>
           <p className="policy-paragraph">
             This policy sets out our commitment to safeguarding and the procedures we have in place to ensure the protection of all individuals who come into contact with our charity, whether as beneficiaries, volunteers, or staff members.

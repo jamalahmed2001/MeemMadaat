@@ -33,7 +33,6 @@ export const NAVIGATION: NavigationItem[] = [
 export const ORGANIZATION_INFO: OrganizationInfo = {
   name: 'Meem Madaat Welfare',
   tagline: 'Empowering communities through compassionate action and sustainable development.',
-  charityNumber: '1234567',
   donationPolicy: '100% of your donations go directly to our charitable projects.',
   contact: {
     email: 'Meemmadaat@gmail.com',

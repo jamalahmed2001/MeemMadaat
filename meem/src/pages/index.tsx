@@ -46,10 +46,10 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Meem Madaat - UK Registered Charity | Transforming Lives Since 2016</title>
+        <title>Meem Madaat - UK Charitable Group | Transforming Lives Since 2016</title>
         <meta
           name="description"
-          content="UK-registered charity serving communities since 2016. Medical clinics, homeless support, emergency relief across UK and Pakistan. 95% of donations reach beneficiaries. Charity No. XXXXX"
+          content="UK-based charitable group serving communities since 2016. Medical clinics, homeless support, emergency relief across UK and Pakistan. 95% of donations reach beneficiaries."
         />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/images/meem-madaat-logo.png" />
@@ -85,7 +85,7 @@ export default function Home() {
               <svg className="w-5 h-5 text-gofundme-green mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="text-sm font-medium">UK Registered Charity No. XXXXX • Serving Since 2016</span>
+              <span className="text-sm font-medium">UK-Based Charitable Group • Serving Since 2016</span>
             </div>
             
             {/* Main heading with animation */}

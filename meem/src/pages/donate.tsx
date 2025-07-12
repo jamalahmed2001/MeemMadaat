@@ -384,7 +384,7 @@ export default function Donate() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Tax Deductible</h3>
                 <p className="text-gray-600">
-                  As a registered charity, your donations are tax deductible
+                  Your donations support our charitable activities
                 </p>
               </div>
 
