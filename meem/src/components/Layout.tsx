@@ -49,6 +49,19 @@ export default function Layout({ children }: LayoutProps) {
     };
   }, []);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [mobileMenuOpen]);
+
   const renderNavItem = (item: NavigationItem, isMobile = false) => {
     const hasChildren = item.children && item.children.length > 0;
     
@@ -57,7 +70,7 @@ export default function Layout({ children }: LayoutProps) {
         <Link
           href={item.href}
           className={`hover:text-gofundme-green transition-colors duration-200 ${
-            isMobile ? 'block py-3 px-2 rounded-md hover:bg-white/10 text-base' : 'text-sm xl:text-base whitespace-nowrap'
+            isMobile ? 'block py-2 px-3 rounded-md hover:bg-white/10 text-sm' : 'text-sm xl:text-base whitespace-nowrap'
           }`}
           onClick={() => isMobile && setMobileMenuOpen(false)}
         >
@@ -72,7 +85,7 @@ export default function Layout({ children }: LayoutProps) {
           <Link
             href={item.href}
             className={`hover:text-gofundme-green transition-colors duration-200 ${
-              isMobile ? 'block py-3 px-2 rounded-md hover:bg-white/10 text-base' : 'py-2 text-sm xl:text-base whitespace-nowrap'
+              isMobile ? 'block py-2 px-3 rounded-md hover:bg-white/10 text-sm' : 'py-2 text-sm xl:text-base whitespace-nowrap'
             }`}
             onClick={() => isMobile && setMobileMenuOpen(false)}
           >
@@ -122,12 +135,12 @@ export default function Layout({ children }: LayoutProps) {
         
         {/* Mobile Dropdown */}
         {isMobile && hasChildren && item.children && (
-          <div className="pl-4 space-y-1">
+          <div className="pl-6 space-y-1 mt-1">
             {item.children.map((child) => (
               <Link
                 key={child.name}
                 href={child.href}
-                className="block py-2 px-2 rounded-md hover:bg-white/10 hover:text-gofundme-green transition-colors duration-200 text-sm"
+                className="block py-1.5 px-3 rounded-md hover:bg-white/10 hover:text-gofundme-green transition-colors duration-200 text-xs"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {child.name}
@@ -209,19 +222,21 @@ export default function Layout({ children }: LayoutProps) {
 
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
-            <div className="lg:hidden py-4 border-t border-white/20 bg-dark-teal">
-              <div className="space-y-1 px-4 sm:px-6">
-                {NAVIGATION.map((item) => (
-                  <div key={item.name}>{renderNavItem(item, true)}</div>
-                ))}
-                <div className="pt-4">
-                  <Link 
-                    href="/donate" 
-                    className="btn-primary w-full text-center"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Donate Now
-                  </Link>
+            <div className="lg:hidden fixed inset-x-0 top-16 md:top-20 bottom-0 bg-dark-teal overflow-y-auto">
+              <div className="py-4 px-4 sm:px-6 max-h-[calc(100vh-4rem)] md:max-h-[calc(100vh-5rem)]">
+                <div className="space-y-1">
+                  {NAVIGATION.map((item) => (
+                    <div key={item.name}>{renderNavItem(item, true)}</div>
+                  ))}
+                  <div className="pt-4 pb-2">
+                    <Link 
+                      href="/donate" 
+                      className="btn-primary w-full text-center text-sm"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Donate Now
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

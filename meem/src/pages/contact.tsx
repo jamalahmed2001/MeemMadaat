@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import { useState } from "react";
+import { ORGANIZATION_INFO, SOCIAL_LINKS } from "../utils/constants";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -158,8 +159,8 @@ export default function Contact() {
                     General Enquiries
                   </h3>
                   <p className="text-gray-700">
-                    Email: <a href="mailto:Meemmadaat@gmail.com" className="text-gofundme-green hover:underline">Meemmadaat@gmail.com</a><br />
-                    Phone: <a href="tel:+4407855828260" className="text-gofundme-green hover:underline">07855828260</a>
+                    Email: <a href={`mailto:${ORGANIZATION_INFO.contact.email}`} className="text-gofundme-green hover:underline">{ORGANIZATION_INFO.contact.email}</a><br />
+                    Phone: <a href={`tel:${ORGANIZATION_INFO.contact.phone.replace(/\s/g, '')}`} className="text-gofundme-green hover:underline">{ORGANIZATION_INFO.contact.phone}</a>
                   </p>
                   <p className="text-sm text-gray-600 mt-2">
                     Office hours: Monday - Friday, 9:00 AM - 5:00 PM GMT
@@ -210,7 +211,7 @@ export default function Contact() {
               </p>
               <div className="flex justify-center space-x-4">
                 <a 
-                  href="https://www.facebook.com/meemmadaatwelfaregroup" 
+                  href={SOCIAL_LINKS.facebook}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-all duration-300 hover:scale-110 shadow-lg"
@@ -221,7 +222,7 @@ export default function Contact() {
                   </svg>
                 </a>
                 <a 
-                  href="https://twitter.com/meemmadaat" 
+                  href={SOCIAL_LINKS.twitter}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-all duration-300 hover:scale-110 shadow-lg"
@@ -232,7 +233,7 @@ export default function Contact() {
                   </svg>
                 </a>
                 <a 
-                  href="https://instagram.com/meemmadaatwelfaregroup" 
+                  href={SOCIAL_LINKS.instagram}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 rounded-full flex items-center justify-center text-white hover:from-purple-700 hover:via-pink-700 hover:to-orange-600 transition-all duration-300 hover:scale-110 shadow-lg"
@@ -254,7 +255,7 @@ export default function Contact() {
                   </svg>
                 </a> */}
                 <a 
-                  href="https://www.youtube.com/channel/UCDq3MHeLr8w_Qj2Ju60zNrA" 
+                  href={SOCIAL_LINKS.youtube}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-all duration-300 hover:scale-110 shadow-lg"

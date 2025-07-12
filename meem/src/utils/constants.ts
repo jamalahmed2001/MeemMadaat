@@ -36,14 +36,14 @@ export const ORGANIZATION_INFO: OrganizationInfo = {
   charityNumber: '1234567',
   donationPolicy: '100% of your donations go directly to our charitable projects.',
   contact: {
-    email: 'info@meemmadaat.org',
-    phone: '+44 20 1234 5678',
+    email: 'Meemmadaat@gmail.com',
+    phone: '07855828260',
   },
 };
 
 export const SOCIAL_LINKS: SocialLinks = {
-  facebook: 'https://www.facebook.com/meemmadaat',
+  facebook: 'https://www.facebook.com/meemmadaatwelfaregroup',
   twitter: 'https://twitter.com/meemmadaat',
-  instagram: 'https://www.instagram.com/meemmadaat',
-  youtube: 'https://www.youtube.com/meemmadaat',
+  instagram: 'https://www.instagram.com/meemmadaatwelfaregroup',
+  youtube: 'https://www.youtube.com/channel/UCDq3MHeLr8w_Qj2Ju60zNrA',
 }; 
